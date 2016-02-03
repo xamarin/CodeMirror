@@ -300,7 +300,7 @@
       setTimeout(function(){cm.focus();}, 20);
     });
 
-    CodeMirror.signal(data, "select", completions[0], hints.firstChild);
+    CodeMirror.signal(data, "select", completions[this.selectedHint], hints.firstChild);
     return true;
   }
 
